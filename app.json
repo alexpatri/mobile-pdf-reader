@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "bolt-expo-nativewind",
-    "slug": "bolt-expo-nativewind",
+    "name": "pdf-reader",
+    "slug": "pdf-reader",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -16,7 +16,9 @@
       "output": "single",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": ["expo-router", "expo-dev-client",
+    "plugins": [
+      "expo-router",
+      "expo-dev-client",
       [
         "expo-build-properties",
         {
@@ -24,9 +26,21 @@
             "useFrameworks": "static"
           }
         }
-      ]],
+      ]
+    ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "36fc41fc-2149-469d-b099-efc9f9cb9a36"
+      }
+    },
+    "android": {
+      "package": "com.alexpatri.pdfreader"
     }
   }
 }
